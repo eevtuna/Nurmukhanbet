@@ -1,0 +1,294 @@
+body{ 
+    background-color: #fcc302;
+    margin: 0; 
+}
+.background{
+    height: 933px;
+}
+#rectangle {
+    left: 100px
+    width: ;
+    height: 120px;
+    background-color: #daac00;
+}
+.container{
+    width: 100%;
+    justify-content: center;
+    background-image: url(logo-2.png);
+}
+img{
+    width: 212px;
+}
+.navlink{
+    color: white; 
+    display: inline-block; 
+    text-decoration: none;
+    vertical-align: bottom;
+    margin: 0 25px;
+    transition: color .1s linear;
+    font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+nav {
+    vertical-align: bottom;
+}
+            input{
+                width: 130px;
+                height: 38px;
+            }
+.container2{
+    color: white;
+    font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+    margin-top: 200px;
+    margin-left:140px;
+}         
+.h1{
+    line-height: 1,2;
+    font-size: 70px;
+}  
+.dog{
+    width: 730px;
+}
+.white2{
+     background-color: white;
+}
+.second{
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin-left: 140px;
+}
+.second2{
+    margin-left: 140px;
+    font-size: 35px;
+    font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+}
+#square {
+    width: 230px;
+    height: 200px;
+    background: #fcc302;
+}
+.third{
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.third2{
+    font-size: 35px;
+    font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+    color: white;
+}
+.photo{
+    width: 300px;
+}
+.phototext{
+    margin-top: 350px;
+    margin-left: -800px;
+    font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+}
+.subphototext{
+    margin-top: 20px;
+    margin-right: 800px;
+    color: white;
+    font-size: 25px;
+}
+.phototext2{
+    margin-top: -190px;
+    margin-left: 20px;
+    font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+}
+.subphototext2{
+    margin-top: 13px;
+    margin-right: -10px;
+    color: white;
+    font-size: 25px;
+}
+.phototext3{
+    margin-top: -190px;
+    margin-left: 800px;
+    font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+}
+.subphototext3{
+    margin-top: 13px;
+    margin-left: 800px;
+    color: white;
+    font-size: 25px;
+}
+.white4{
+    background-color: white;
+}
+#square2 {
+    width: 230px;
+    height: 200px;
+    background: #fcc302;
+    margin-top: 3100px;
+    margin-left: 400px;
+}
+.gif{
+    width: 400px;
+}
+.nyancat{
+    text-align: right;
+    font-family: 'Monsterrtatbold' sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+.subnyancat{
+    font-size: 30px;
+    text-align: right;
+    font-family: 'Monsterrtatbold' sans-serif;
+    font-weight: 400;
+}
+.fifth{
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.fifth2{
+    font-size: 35px;
+    font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+    color: white;
+}
+.photo2{
+    width: 300px;
+    height: 300px;
+}
+.pervoe{
+    color: white;
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-size: 43px;
+    font-weight: 600;
+}
+.vtoroe{
+    color: white;
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-size: 43px;
+    font-weight: 600;
+}
+.tretie{
+    color: white;
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-size: 43px;
+    font-weight: 600;
+}
+.white6{
+    background-color: white;
+}
+.six{
+    font-family:  'Monsterrat', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+}
+.six2{
+    font-size: 35px;
+    font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+}
+.photo3{
+    width: 300px;
+}
+.pervoe1{
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+}
+.ppervoe{
+    color: aqua;
+}
+.vvtoroe{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+.ttretie{
+    color: aqua;
+    font-size: 20px;
+    font-weight: 700;
+}
+.photo33{
+    display: inline-block;
+    background-color: #ffffff;
+    border: 0.3px solid #000000;
+    border-top: none;
+    user-select: none;
+    height: 300px;
+    width: 300px;
+    margin-top: 210px;
+    margin-left: 200px;   
+}
+.photo34{
+    display: inline-block;
+    background-color: #ffffff;
+    border: 0.3px solid #000000;
+    border-top: none;
+    user-select: none;
+    height: 300px;
+    width: 300px;
+    margin-top: 245px;
+    margin-left: 95.5px; 
+}
+.photo35{
+    display: inline-block;
+    background-color: #ffffff;
+    border: 0.3px solid #000000;
+    border-top: none;
+    user-select: none;
+    height: 300px;
+    width: 300px;
+    margin-top: 245px;  
+    margin-left: 95.5px; 
+}
+.black{
+    background-color: #343434;
+}
+.about{
+    color: white;
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-size:40px;
+    font-weight: 600;
+    max-width: 100px;
+}
+.about2{
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+.service{
+    color: white;
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-size:40px;
+    font-weight: 600;
+}
+.service2{
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+.title{
+    color: white;
+    font-family:  'Open Sansbold', Helvetica, Arial, sans-serif;
+    font-size:40px;
+    font-weight: 600;
+}
+.title2{
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+.telega{
+    width: 400px;
+}

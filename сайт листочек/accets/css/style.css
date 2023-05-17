@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    background-image: url(фон.png);
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+
+}
+
+header{
+    justify-content: space-between;
+}
+
+nav{
+    
+    
+}
+
+.headerlogo{
+    font-family: 'Unna', serif;
+    text-transform: uppercase;
+    margin-left: 690px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navlink{
+    margin-left: 790px;
+    margin-top: -19px;
+
+}
+
+.headernavlink{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 60px;
+    transition: color .1s linear;
+    font-weight: 700;
+}
+
+
+.headernavlink:hover{
+    color: #e08e9c;
+}
+
+.navbtn{
+    margin-left: 1400px;
+    margin-top: -24px;
+
+}
+
+.headernavbtn{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    transition: color .1s linear;
+
+}
+
+.headernavbtn:hover{
+    color: #e08e9c;
+}
+
+img{
+    
+}
+
+.content{
+    width: 370px;
+    height: 390px;
+    background-color: #ff6680;
+    position: ;
+    opacity: 70%;
+}
+.h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Unna', serif;
+}
+.p1{
+    font-family: 'Sacramento', 'cursive';
+    color: white;
+    font-size: 40px;
+}
+.p2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.headernavbtn2{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff6680;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    transition: color .1s linear;
+    font-weight: 700;
+    
+}
+.headernavbtn2:hover{
+   background-color: white;
+}
+.headernavbtn3{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff6680;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    transition: color .1s linear;
+    font-weight: 700;
+}
+.headernavbtn3:hover{
+    background-color: white;
+}
+.img{
+    width: 200px;
+}
+.p3{
+    writing-mode: vertical-lr;
+    font-family: 'Unna', serif;
+    color: black;
+    font-size: 20px;
+}
+ 

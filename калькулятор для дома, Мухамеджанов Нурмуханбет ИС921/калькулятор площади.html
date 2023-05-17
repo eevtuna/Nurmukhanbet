@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <img src="дом (1).png" width="160px" alt="" style="position: absolute;top: 50px;left: 60px;">
+    <img src="дом (2).png" width="130px" alt="" style="position: absolute;top: 350px;left: 80px;">
+   <select id="cvet" style="position: absolute;top: 400px;left: 300px;">
+        <option value="ekonom">Эконом</option>
+        <option value="sredniy">Средний</option>
+        <option value="premium">Премиум</option>
+  </select>
+  <h2 style="position: absolute;top: 345px;left: 300px;">Ремонт</h2>
+  <select id="cvet" style="position: absolute;top: 500px;left: 300px;">
+    <option value="ekonom">Каменный</option>
+    <option value="sredniy">Деревянный</option>
+    <option value="premium">Кирпичный</option>
+</select>
+<h2  style="position: absolute;top: 445px;left: 300px;">Тип перекрытия</h2>
+        <input class="rounded-input" type="text" id="shirina" value="" placeholder="Введите число*" style="position: absolute;top: 140px;left: 300px;">
+            <h2 style="position: absolute;top: 80px;left: 300px;">Ширина дома,м2</h2>
+        <input class="rounded-input" type="text" id="height" value="" placeholder="Введите число*" style="position: absolute;top: 260px;left: 300px;">
+            <h2 style="position: absolute;top: 203px;left: 300px;">Высота дома,м2</h2>
+        <input class="rounded-input" type="text" id="dlina" value="" placeholder="Введите число*" style="position: absolute;top: 140px;left: 570px;">
+            <h2 style="position: absolute;top: 80px;left: 570px;">Длина дома,м2</h2>
+            <div style="position: absolute;top: 200px;left: 570px;">
+         <fieldset class="fieldset">
+            <p>Время постройки</p>
+                    <label>2 года
+                    <input type="radio" name="fruit" checked/>
+                    <span></span>
+                    </label>
+                    <label>3 года
+                    <input type="radio" name="fruit" />
+                    <span></span>
+                    </label>
+                    <label>4 года
+                    <input type="radio" name="fruit" />
+                    <span></span>
+         </label>
+         </fieldset>
+        </div>
+        <div style="position: absolute;top: 380px;left: 585px;">
+               <p>Монолитная лестница</p>
+                       <label>Да
+                       <input type="radio" name="lestnisa" checked/>
+                       <span></span>
+                       </label>
+                       <label>Нет
+                       <input type="radio" name="lestnisa" />
+                       <span></span>
+            </label>
+           </div>
+           
+           <div class="form-wrap" style="position: absolute; top: 100px; left: 900px;">
+            <div><fieldset class="fieldset2">
+            <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png"> 
+              <h1>Регистрация</h1>
+            </div>
+            <form method="post" action="form.php">
+              <div>
+                <label for="name">Имя</label>
+                <input type="text" name="name" required>
+              </div>
+              <div class="radio">
+                <span>Пол</span>
+                <label>мужской
+                  <input type="radio" name="pol" value="мужской">
+                  <div class="radio-control male"></div>
+                  <span></span>
+                </label>
+                <label>женский
+                  <input type="radio" name="pol" value="женский">
+                  <div class="radio-control female"></div>
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" required>
+              </div>
+              <div>
+                <label for="country">Страна</label>
+                <select name="country">
+                  <option>Выберите страну проживания</option>
+                  <option value="Россия">Россия</option> 
+                  <option value="Украина">Украина</option> 
+                  <option value="Казахстан">Казахстан</option> 
+                </select> 
+                <div class="select-arrow"></div> 
+              </div> 
+              <button type="submit" style="margin-top: 20px;">Отправить</button> 
+            </form>
+           </fieldset> </div>
+          </div>
+        
+   <button onclick="raschitat();" style="position: absolute;top: 600px;left: 280px;">Рассчитать стоимость</button>
+        <div id="ploschad" style="position: absolute;top: 600px;left: 490px;"></div>
+        <div id="stoimost" style="position: absolute;top: 630px;left: 490px;"></div>
+    <style >
+       .fieldset2{
+        width: 300px;
+        height: 500px;
+        border-color: rgb(5, 247, 5);
+        padding-left: 130px;
+        padding-top: 40px;
+       }
+        body{
+            background-image: url(phon.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .rounded-input {
+            padding:10px;
+            border-radius:10px;
+            border-color: orange;
+        }
+        select {
+            width: 190px;
+            padding:10px;
+            border-radius:10px;
+            border-color: orange;
+            border-width: 2px;
+        }
+        button{        
+            appearance: none;
+            border: 0;
+            border-radius: 5px;
+            background: orange;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+  
+
+/* container */
+label {
+  display:block;
+  margin-bottom:4px;
+  position: relative; /* to contain absolute elements */
+  padding-left:30px; /* free space for custom radio button */
+  cursor: pointer;
+}
+/* hide default radio button  */
+label input[type=radio] {
+  position: absolute; /* prevent taking any space */
+  /* cross-browser hidingg */
+  opactiy: 0;
+  width:0; 
+  height:0;
+}
+/* custom radio button */
+label span {
+  position: absolute;
+  /* position to the free space in <label> */
+  top:0;
+  left:0;
+  width:20px; 
+  height:20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: .3s background-color; /* slight transition */
+}
+/* the check icon */
+label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+  /* middle */
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color:#fff;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+}
+label:hover span {
+  background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+label input:checked ~ span {
+  background-color: orange;
+}
+label input:checked ~ span:after {
+  display:block;
+}
+.fieldset{
+    border-color: rgb(5, 247, 5);
+    max-width: 290px;
+    width: 200px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+    </style>
+    <script type="text/javascript">
+   function raschitat() {
+cvet  = document.getElementById('cvet').value;
+switch (cvet) {
+   case "ekonom":
+    cena = 100000;
+      break
+   case "sredniy":
+      cena = 160000;
+
+      break  
+    case "premium":
+      cena = 200000;
+      break  
+   default:
+      cena = 440;
+      brea
+ }
+        shirina  = document.getElementById('shirina').value;
+        dlina  = document.getElementById('dlina').value;
+        height = document.getElementById('height').value;
+
+    if(shirina == ""){
+    alert("Вы не указали ширину");
+    } else if(height == ""){
+    alert("Вы не указали высоту");
+    } else if (dlina == "") {
+    alert("Вы не указали длину");
+    } else {
+        ploschad = parseFloat (shirina)* parseFloat (dlina);
+        document.getElementById('ploschad').innerHTML = "Площадь равна: "+ ploschad +" кв. м.";
+        stoimost = ploschad*cena;
+        document.getElementById('stoimost').innerHTML = "Стоимость равна: "+ stoimost +" тг.";
+    }
+}
+</script>
+
+  </body>
+</html>
